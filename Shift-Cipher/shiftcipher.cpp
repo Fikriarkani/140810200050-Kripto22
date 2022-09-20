@@ -223,7 +223,7 @@ int main() {
         } else if (input == 5){
             cout << "Program Selesai\n";
         } else if (isdigit(input) == 0 || input <= 0 || input >=6 ){
-            cout << "Masukkan Angka 1-6 untuk memilih menu!\n";  
+            cout << "Masukkan Angka 1-5 untuk memilih menu!\n";  
         }  
     } while (input != 5);
     
