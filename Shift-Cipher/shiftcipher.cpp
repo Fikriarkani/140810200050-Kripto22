@@ -46,13 +46,11 @@ void decrypt()
             } else {
                 result += char(int(text[i]-K-65)%26 +65);
             }
-            //result += char(int(text[i]-K-65)%26 +65);
         } else if (islower(text[i])){
             if(text[i]-K-97 < 0){
                 result += char(mod_negative(int(text[i]-K-97),26)+97);
             } else {
                 result += char(int(text[i]-K-97)%26 +97);}
-            //result += char(int(text[i]-K-97)%26 +97);
         } else {
             result+=" ";
         }
@@ -178,13 +176,11 @@ void decryptFile(){
                 } else {
                     resultContainer[i] += char(int(decryptParagraph[l]-K-65)%26 +65);
                 }
-                //result += char(int(text[i]-K-65)%26 +65);
             } else if (islower(decryptParagraph[l])){
                 if(decryptParagraph[l]-K-97 < 0){
                     resultContainer[i] += char(mod_negative(int(decryptParagraph[l]-K-97),26)+97);
                 } else {
                     resultContainer[i] += char(int(decryptParagraph[l]-K-97)%26 +97);}
-                //result += char(int(text[i]-K-97)%26 +97);
             } else {
                 resultContainer[i] += decryptParagraph[l];
             }
