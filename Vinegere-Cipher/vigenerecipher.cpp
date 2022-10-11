@@ -57,8 +57,7 @@ void encrypt(){
  
 /*  fungsi untuk melakukan deksripsi terhadap cipherteks
     yang diberikan  */
-void decrypt()
-{   
+void decrypt(){   
     string cipherText;
     string keyword;
     cout << "Masukkan ciphertext : "; getline(cin,cipherText);
@@ -88,13 +87,10 @@ void decrypt()
     cout <<"Teks yang telah didekripsi : "<< decryptText << endl;
 }
  
-
-int main()
-{
+int main(){
     // deklarasi input dan membuat menu tampilan vinegere cipher
     int input;
-    do
-    {
+    do{
         cout << "=Vinegere Cipher=\n"
              << "1.Enkripsi\n"
              << "2.Dekripsi\n"
