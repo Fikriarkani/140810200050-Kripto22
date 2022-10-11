@@ -11,9 +11,6 @@ using namespace std;
     menjadi jumlahnya sama apabila string cipher/plainteks 
     lebih panjang */
 string generateKey(string teksInput, string key){
-    /* membuat parameter jumlah maksimum key */
-    int maxLengthKey = teksInput.size();
-
     /* proses melengkapi panjang key */
     for (int i = 0; key.size() < teksInput.size(); i++)
     {   
